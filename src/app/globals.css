@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media print {
+  body > *:not(.print-area) {
+    display: none !important;
+  }
+  .print-area {
+    display: block !important;
+  }
+  nav,
+  header {
+    display: none !important;
+  }
+}
